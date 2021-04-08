@@ -20,9 +20,9 @@ run the `sh git2git-simple.sh SRC_REPOSITORY DST_REPOSITORY`
 where
 *_REPOSITORY are e.g. ssh://git@github.com/fmlorg/git2git-simple.
 
-For example, if you want to move an old repository fmlorg/git2git-simple to a new repository prisoner-no6/git-move on the github.com, run
+For example, if you want to move an old repository fmlorg/git2git-simple to a new repository example/git-move on the github.com, run
 ```
-sh git2git-simple.sh ssh://git@github.com/fmlorg/git2git-simple ssh://git@github.com/prisoner-no6/git-move
+sh git2git-simple.sh ssh://git@github.com/fmlorg/git2git-simple ssh://git@github.com/example/git-move
 ```
-Pay attention you need to create the corresponding github repository e.g. prisoner-no6/git-move in this case before you run the above command.
+Pay attention you need to create the corresponding github repository e.g. example/git-move in this case before you run the above command.
 
