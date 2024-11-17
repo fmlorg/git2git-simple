@@ -15,14 +15,26 @@ or
 
 git clone   ssh://git@github.com/fmlorg/git2git-simple
 ```
-and
-run the `sh git2git-simple.sh SRC_REPOSITORY DST_REPOSITORY`
+
+## How to use
+
+run
+```
+sh git2git-simple.sh SRC_REPO DST_REPO
+```
 where
-*_REPOSITORY are e.g. ssh://git@github.com/fmlorg/git2git-simple.
+SRC_REPO and DST_REPO should be a github format e.g. ssh://git@github.com/id/repo.
 
-For example, if you want to move an old repository fmlorg/git2git-simple to a new repository example/git-move on the github.com, run
-```
-sh git2git-simple.sh ssh://git@github.com/fmlorg/git2git-simple ssh://git@github.com/example/git-move
-```
-Pay attention you need to create the corresponding github repository e.g. example/git-move in this case before you run the above command.
 
+## Examples
+
+If you want to move an old repository "fmlorg/git2git-simple" to a new repository "example/git-move"
+on the github.com, 
+
+1. create "example/git-move" repository on the github.com
+2. run the following command
+   ```
+   sh git2git-simple.sh ssh://git@github.com/fmlorg/git2git-simple ssh://git@github.com/example/git-move
+   ```
+   1. this script clone the old repository
+   1. upload the old repository content to the new repository
